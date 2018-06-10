@@ -1,0 +1,38 @@
+*Version Queue*
+
+Design and implement a Version-Queue. A Version-Queue maintains a version
+number along with normal Queue functionality. Every
+operation[Enqueue/Dequeue] on the Queue increments its version.
+
+Implement the following functions:
+
+1. Enqueue - appends an element at the end of the queue.
+
+2. Dequeue - returns the top element of the queue.
+
+3. Print - it takes a version number as input and prints the elements of
+the queue of the given version. The version number input can also be an
+old/historical version number.
+
+E.g. if the current version number of the queue is 7 and the input to this
+function is 5, then it should print the elements of the queue when its
+version number was 5.
+
+For simplicity, assume the elements are integers.
+
+We expect you to write a helper program to test the above data structure
+which will read input from stdin and prints output to stdout.
+
+Input format:
+First line should have an integer n (number of operations). This should be
+followed by n number of lines, each denoting one operation.
+e.g.
+6
+e 1
+e 4
+d
+e 5
+p 2
+p 4
+
+'e' stands for enqueue
